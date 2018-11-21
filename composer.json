@@ -4,10 +4,22 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "type": "project",
+	  "config": {
+	    "preferred-install": "dist",
+	    "sort-packages": true,
+	    "optimize-autoloader": true
+	  },
+	  "minimum-stability": "dev",
+	  "prefer-stable": true,
     "require": {
-        "php": ">=5.5.9",
+    	"php": ">=7.1.0",
         "laravel/framework": "5.2.*",
         "php-imap/php-imap": "~2.0",
+    "igaster/laravel-theme": "2.0.*",
+    "doctrine/dbal": "^2.3",
+	"laravelcollective/html": "^5.2.0",
+	"prettus/l5-repository": "~2.6",
+	"laracasts/flash": "~3.0",
         "neitanod/forceutf8": "dev-master",
         "phpmailer/phpmailer": "^5.2"
     },
@@ -48,8 +60,5 @@
         "post-update-cmd": [
             "php artisan optimize"
         ]
-    },
-    "config": {
-        "preferred-install": "dist"
     }
 }
